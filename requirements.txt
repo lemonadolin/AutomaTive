@@ -1,0 +1,7 @@
+# Runtime dependencies for PC Autopilot
+PySide6>=6.6
+psutil>=5.9
+keyring>=24.0
+
+# Windows-only native integrations (installed on Windows via requirements-win.txt)
+# pycaw, comtypes, pywin32 -- see requirements-win.txt

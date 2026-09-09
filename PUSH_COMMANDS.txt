@@ -1,0 +1,44 @@
+========================================================================
+ PUSH PC AUTOPILOT TO GITHUB  ->  https://github.com/lemonadolin/Automation-Tool
+========================================================================
+
+The project in this folder is ALREADY a git repo with:
+  * two commits ready to push
+  * the "origin" remote pointing at your repo
+  * the branch named "main" (the build workflow triggers on main)
+
+You just need to run ONE command from inside this folder.
+
+------------------------------------------------------------------------
+STEP 1  -  Open a terminal in this project folder
+------------------------------------------------------------------------
+Windows : open the "pc_autopilot" folder in File Explorer, click the
+          address bar, type  cmd  and press Enter.
+Mac/Linux: cd into the pc_autopilot folder in your terminal.
+
+------------------------------------------------------------------------
+STEP 2  -  Push
+------------------------------------------------------------------------
+    git push -u origin main
+
+  * If prompted for "Username": lemonadolin
+  * If prompted for "Password": paste your GitHub token
+        (paste it ONLY into this terminal prompt, never into a website
+         or chat). Then revoke/rotate that token afterwards.
+
+  If the remote is missing for any reason, run these first:
+    git remote add origin https://github.com/lemonadolin/Automation-Tool.git
+    git branch -M main
+    git push -u origin main
+
+------------------------------------------------------------------------
+STEP 3  -  Get the .exe (built automatically on GitHub's Windows servers)
+------------------------------------------------------------------------
+  1. Open  https://github.com/lemonadolin/Automation-Tool/actions
+  2. Wait for the "Build Windows EXE" run to finish (green check, ~3-5 min)
+  3. Click the run  ->  scroll to "Artifacts"
+  4. Download  "PCAutopilot-windows"  (a zip)
+  5. Unzip it, open the PCAutopilot folder, double-click PCAutopilot.exe
+
+Done. It runs on any Windows 10/11 PC with no Python installed.
+========================================================================

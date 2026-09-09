@@ -1,0 +1,9 @@
+# Full Windows dependency set (installed on the Windows build/run machine).
+-r requirements.txt
+
+# Native Windows audio (Core Audio via pycaw) + COM
+pycaw>=20240210
+comtypes>=1.2.0
+
+# Window foregrounding / process helpers
+pywin32>=306
